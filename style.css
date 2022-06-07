@@ -2,9 +2,6 @@
 /* 상단 바 */
 
 ul {
-    /* list-style-type: none; */
-    /* position: sticky; */
-    /* word-spacing: 0%; */
     padding:0% 1% 0% 1%;
 }
 
@@ -50,13 +47,15 @@ nav{
 }
 
 .dropdown-content{
+    border-radius: 7%;
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    left:1%;
+    background-color: #c2bdbd;
     min-width: 120px;
     width:100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    padding: 11px 15px;
     z-index: 1;
 }
 
@@ -86,13 +85,6 @@ nav{
 
 
 
-  
-  /* @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
-  body{
-    font-family: 'Hanna';
-  } */
-
-
 
 
 
@@ -100,11 +92,12 @@ nav{
 /* 이미지 갤러리 */
 
   div.gallery {
-    margin: 40px 0px 10% 4%; /*위, 오른쪽, 아래, 왼쪽 순*/
+    margin: 40px 1% 10% 3%; /*위, 오른쪽, 아래, 왼쪽 순*/
     float: left;
     width: 20%;
     height: 50%;
   }
+
   
   div.gallery > img:hover {
     border: 1px solid #777;
@@ -149,17 +142,65 @@ nav{
     width: 100%;
     border: 1px solid;
     border-radius: 5px;
+    border-style: none;
   }
 
-  .grid_item2{
-    background-color:rgb(172, 209, 228);
+
+
+  /*동물 영역*/
+  .grid_animal{
+    background-color:rgb(223, 238, 245);
     border-style:none;
   }
 
+  .grid_animal .gallery{
+    position: relative;
+    top:10%;
+    height: 80%;
+    margin-left: 3%;
+  } 
 
 
+  /*컴퓨터 하드웨어 영역*/
+  .grid_hardware{
+    background-color:rgb(206, 216, 225);
+    border-style:none;
+  }
+
+  .grid_hardware .gallery{
+    position: relative;
+    top:12%;
+    margin-left: 3.3%;
+  } 
+
+
+  /*자동차영역*/
+  .grid_automobile{
+    background-color:rgb(186, 200, 215);
+    border-style:none;
+  }
+
+  .grid_automobile .gallery{
+    position: relative;
+    top:10%;
+    margin-left: 4%;
+  } 
 
   
+  /*컴퓨터 지식 영역*/
+  .grid_Cs{
+    background-color:rgb(173, 185, 206);
+    border-style:none;
+  }
+
+  .grid_Cs .gallery{
+    position: relative;
+    top:10%;
+    margin-left: 4%;
+  } 
+
+
+
   /*sticky*/
 
   .sticky{

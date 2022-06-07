@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>운영체제</title>
+    <link rel="stylesheet" href="../style2.css">
+    <style>
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body  style="background-color:rgb(208, 199, 199); display:grid;">
+    
+    <div class="grid_top" style="background-color:rgb(105, 99, 87);">
+        <h1 class="grid_top_content" style="font-size: 50px;">
+            This is the OperatingSystem Page</h1>
+    </div>
+
+<nav style="background-color: rgba(35, 40, 40, 0.555);">
+    <ul>
+        <li>
+            <a href="../index.html"><p>메인 홈페이지로</p></a>
+        </li>
+        <li>
+            <a href="#top"><p>맨 위로 이동</p></a>
+        </li>
+        <li>
+            <a href="#mid"><p>중간으로 이동</p></a>
+        </li>
+        <li>
+            <a href="#bottom"><p>동영상 보기</p></a>
+        </li>
+    </ul>
+    </nav>
+
+    
+
+
+    <div class="frame" style="height:70%">
+        <img src="../img/운영체제/OS4.png" alt="O/S"
+         style="width:50%;"><br><br>
+         <h1>운영체제(Operating System)란?</h1>
+        <p>운영체제란 컴퓨터 하드웨어(입출력 장치, CPU)의 리소스를 관리해주면서
+             동시에 여러 애플리케이션이 작동할 수 있는 환경을 제공해주는 소프트웨어다.</p>
+        <h2>운영체제(OS)가 하는 일</h2>
+          <p>1. 프로세스 관리<br>   
+             2. 메모리 관리<br>     
+             3. 저장소 관리<br>     
+             4. 보안     </p>
+    </div>
+
+    <div class="frame" style="height:70%">
+        <img src="../img/운영체제/Interrupt.png" alt="O/S"><br><br>
+        <h3>Interrupt(인터럽트)란</h3>
+        <p>컴퓨터가 부팅이 되면 OS 프로그램을 실행한 후 사용자의 입력 이벤트를 기다린다.<br>
+            이 이벤트를 인터럽트라고 한다. <br>
+            인터럽트가 발생되면 OS는 해당 명령어(Interrupt를 발생시킨) 주소를 기억한다.<br> 
+            그 후 인터럽트가 끝나면 해당 주소로 돌아가 다음 명령어를 수행하거나 대기상태로 돌아간다.</p>
+            <hr style="width:45%; margin-right:4%;">
+        <p>인터럽트는 말그대로 방해의 의미를 가지고 있다. <br>
+            CPU가 프로그램을 실행하고 있을 때 
+            입출력 하드웨어 등의 장치에 예외상황(에러라던지, 입력이라던지, 출력이라던지..) <br>
+            다양한 상황에 대해서 CPU가 처리할 수 있도록 중간에 멈추게 한다. <br>
+            인터럽트가 발생하면 CPU가 수행중이던 작업은 따로 저장하게 되고
+            (CPU 내부 레지스터나 메인 메모리 등)<br>
+            인터럽트가 발생한 작업을 먼저 수행하게된다.</p>
+    </div>
+  
+
+    <div class="frame" style="height:71%">
+        <img src="../img/운영체제/OS3.png" alt="O/S" id="mid"><br>
+        <h3>Interrupt(인터럽트)2</h3>
+        <p>운영체제는 interrupt-driven방식으로 
+        사용자의 요청(Event 혹은 Interrupt)이 발생하면
+        운영체제는 적절하게 자원(CPU, I/O, 메모리 등)을 분배하여 그 요청을 처리하는 구조이다.
+        </p>
+        <p>Interrupt에는 크게 두 가지가 있다. H/W interrupt와 S/W interrupt가 있다.</p>
+        <p>H/W interrupt는 I/O, 메모리, CPU와 관련된 interrupt이고 <br>
+            S/W interrupt는 프로그램이 실행되다가 발생될 수 있는 Errors,
+             운영체제 Services들에 대한 요청인 System Call이 있다.<br>
+             S/W interrupt는 잘못 처리하면 한 작업이 자원을 계속 점유하거나 
+             컴퓨터의 동작을 크게 저해할 수 있기 때문에  여러 방법을 써서 이를 예방해야 한다.
+        </p>
+    </div>
+
+
+    <div class="frame" style="height:75%">
+        <img src="../img/운영체제/OS5.png" alt="O/S"><br><br>
+        <h3>운영체제의 부팅과정</h3>
+        <p>컴퓨터의 전원이 나가면 CPU는 ROM에 저장되어 있는 내용을 읽는다.<br>
+             ROM(Read Only Memory)은 컴퓨터에 전원이 나가도 사라지지않는 비휘발성 메모리며, 계속 보관되어야할 정보들을 저장한다.
+              ROM안에는 POST(Power On Self-Test)와 부트로더(Boot Loader)가 저장되어 있다.</p>
+        <p>POST는 컴퓨터 전원이 켜지면 가장 먼저 실행되는 프로그램으로 컴퓨터에 이상이 있는지 체크하는 프로그램이다.<br>
+             부트로더(Boot Loader)는 하드디스크에 저장되어 있는 OS 프로그램을 가져와서 RAM에 넘겨준다.</p>
+    </div>
+
+
+    <div class="frame" id="bottom" 
+    style="height:700px; width:60%; margin-left: 19%; border-style:none;">
+        <iframe src="https://youtube.com/embed/5AjReRMoG3Y" title="O/S lecture Video"></iframe>
+    </div>
+  
+   
+ 
+</body>
+</html>
